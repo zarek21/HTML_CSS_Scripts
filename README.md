@@ -23,12 +23,12 @@ I have organized the exercises into folders corresponding to the course sections
 
 ```
 /
-├── 01-HTML-Fundamentals/
+├── 00-HTML-Fundamentals/
 │   └── index.html
-├── 02-CSS-Fundamentals/
+├── 01-CSS-Fundamentals/
 │   ├── index.html
 │   └── style.css
-├── 03-Laying-Out-Components/
+├── 02-Laying-Out-Components/
 │   └── ...
 ├── ... (more exercise folders)
 └── projects/
