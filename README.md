@@ -2,7 +2,7 @@
 
 This repository contains all my solutions to the exercises, challenges, and projects from the acclaimed HTML & CSS course by [Jonas Schmedtmann](https://www.udemy.com/user/jonasschmedtmann/).
 
-This project is a part of my learning journey to become an elite Frontend Developer, documented publicly under the [#100DaysOfCode](https://twitter.com/hashtag/100DaysOfCode) hashtag.
+This project is a part of my learning journey to become an elite Frontend Developer, documented publicly on my x account @BitZarek.
 
 ---
 
@@ -14,30 +14,6 @@ The main purpose of this repository is to serve as a personal record of my progr
 - **Modern CSS3:** Bringing designs to life with techniques like Flexbox, CSS Grid, and animations.
 - **Responsive Design:** Ensuring web pages look and function perfectly on any device, from mobile phones to desktop computers.
 - **Web Design Principles:** Applying UI/UX concepts to create intuitive and pleasant user experiences.
-
----
-
-## 📂 Repository Structure
-
-I have organized the exercises into folders corresponding to the course sections and challenges for easy navigation and reference.
-
-```
-/
-├── 00-HTML-Fundamentals/
-│   └── index.html
-├── 01-CSS-Fundamentals/
-│   ├── index.html
-│   └── style.css
-├── 02-Laying-Out-Components/
-│   └── ...
-├── ... (more exercise folders)
-└── projects/
-    └── omnifood/
-        ├── index.html
-        ├── css/
-        ├── img/
-        └── js/
-```
 
 ---
 
@@ -60,7 +36,7 @@ The capstone project for this course is [Omnifood](https://omnifood.dev/), a fic
 
 **(Screenshot of the Omnifood project coming soon)**
 
-[➡️ View the live Omnifood project](TBA)
+[➡️ View the live Omnifood project]()
 
 ---
 
