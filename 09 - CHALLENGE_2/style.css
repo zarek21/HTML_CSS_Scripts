@@ -21,14 +21,26 @@ body {
 }
 
 .product-title {
+  position: relative;
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
-  background-color: #000000;
-  color: white;
+  background-color: #e8e8e8;
+  color: rgb(0, 0, 0);
   padding: 15px;
 }
 
+.product-title::before {
+  position: absolute;
+  content: "SALE";
+  top: -20px;
+  left: -40px;
+  padding: 5px 20px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
 /* Product Information */
 
 .price-tag {
@@ -46,11 +58,42 @@ body {
 .more-info:link,
 .more-info:visited {
   color: #000;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
 .more-info:hover,
 .more-info:active {
   text-decoration: none;
+}
+
+/* SHOE COLOR BOXES */
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sneakers-color-blue {
+  background-color: blue;
+}
+
+.sneakers-color-red {
+  background-color: rgb(255, 0, 0);
+}
+
+.sneakers-color-yellow {
+  background-color: yellow;
+}
+
+.sneakers-color-green {
+  background-color: green;
+}
+
+.sneakers-color-brown {
+  background-color: brown;
 }
 
 /* PRODUCT DETAILS */
