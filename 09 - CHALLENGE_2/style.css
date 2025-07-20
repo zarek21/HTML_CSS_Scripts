@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -134,4 +135,8 @@ body {
 .add-cart:hover {
   background-color: white;
   color: black;
+}
+
+.row {
+  display: flex;
 }
