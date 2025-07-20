@@ -9,56 +9,87 @@ body {
   line-height: 1.4;
 }
 
-/* .add-cart {
-  width: 893px;
-  height: 70px;
-  margin: 0 auto;
-} */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
+.container {
+  /*   background-color: red; */
+  display: flex;
+  gap: 40px;
+}
+
+.product-img {
+}
+
+/* PRODUCT */
 .product {
-  border: 4px solid #000;
+  border: 4px solid black;
   width: 825px;
   margin: 50px auto;
+  position: relative;
 }
 
 .product-title {
-  position: relative;
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
-  background-color: #e8e8e8;
-  color: rgb(0, 0, 0);
+  background-color: #f7f7f7;
   padding: 15px;
 }
 
-.product-title::before {
-  position: absolute;
-  content: "SALE";
-  top: -20px;
-  left: -40px;
-  padding: 5px 20px;
-  background-color: red;
-  color: white;
-  font-size: 16px;
-  letter-spacing: 2px;
+/* PRODUCT INFORMATION */
+.product-info {
+  /*  (825 - 8 - 250 - 80) / 2  */
+  /*   width: 243px; */
+  flex: 1;
+  margin-top: 20px;
 }
-/* Product Information */
 
-.price-tag {
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.price {
   font-size: 24px;
 }
 
-.shipping-info {
+.shipping {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
+}
+
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -38px;
+
+  /*   width: 40px;
+  text-align: center; */
+}
+
+.product-description {
+  margin-bottom: 10px;
 }
 
 .more-info:link,
 .more-info:visited {
-  color: #000;
+  color: black;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -68,49 +99,48 @@ body {
   text-decoration: none;
 }
 
-/* SHOE COLOR BOXES */
-.color {
-  height: 22px;
-  width: 22px;
-  display: inline-block;
-  margin-right: 10px;
+.product-colors {
+  display: flex;
+  gap: 10px;
 }
 
-.color-black {
+.color {
   background-color: #000;
+  height: 22px;
+  width: 22px;
 }
 
 .color-blue {
-  background-color: blue;
+  background-color: #2f6ee2;
 }
-
 .color-red {
-  background-color: rgb(255, 0, 0);
+  background-color: #ec2f2f;
 }
-
 .color-yellow {
-  background-color: yellow;
+  background-color: #f0bf1e;
 }
-
 .color-green {
-  background-color: green;
+  background-color: #90cc20;
 }
-
 .color-brown {
-  background-color: brown;
+  background-color: #885214;
 }
 
 /* PRODUCT DETAILS */
+.product-details {
+  /*   width: 243px; */
+  margin-top: 20px;
+  flex: 1;
+}
 
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 30px;
 }
 
 .details-list {
-  list-style-type: square;
+  list-style: square;
   margin-left: 20px;
 }
 
@@ -119,20 +149,19 @@ body {
 }
 
 /* BUTTON */
-
 .add-cart {
   background-color: #000;
   border: none;
-  color: white;
+  color: #fff;
   font-size: 20px;
   text-transform: uppercase;
   cursor: pointer;
   padding: 15px;
   width: 100%;
-  border-top: 4px solid #000;
+  border-top: 4px solid black;
 }
 
 .add-cart:hover {
-  background-color: white;
-  color: black;
+  color: #000;
+  background-color: #fff;
 }
