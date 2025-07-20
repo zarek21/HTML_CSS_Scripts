@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -15,12 +14,6 @@ body {
   margin: 0 auto;
 } */
 
-.product-img {
-  float: left;
-  margin-right: 40px;
-}
-
-/* PRODUCT */
 .product {
   border: 4px solid #000;
   width: 825px;
@@ -48,19 +41,10 @@ body {
   font-size: 16px;
   letter-spacing: 2px;
 }
-
 /* Product Information */
-.product-info {
-  /* (825 - 8 - img width - 80 ) / 2 */
-  width: 243px;
-  float: left;
-  margin-right: 40px;
-  margin-top: 20px;
-}
 
 .price-tag {
   font-size: 24px;
-  float: left;
 }
 
 .shipping-info {
@@ -69,13 +53,6 @@ body {
   font-weight: bold;
   color: #777;
   margin-bottom: 20px;
-  float: right;
-  margin-top: 8px;
-}
-
-.product-description {
-  clear: both;
-  margin-bottom: 10px;
 }
 
 .more-info:link,
@@ -92,11 +69,14 @@ body {
 
 /* SHOE COLOR BOXES */
 .color {
-  background-color: #000;
   height: 22px;
   width: 22px;
   display: inline-block;
   margin-right: 10px;
+}
+
+.color-black {
+  background-color: #000;
 }
 
 .color-blue {
@@ -121,17 +101,11 @@ body {
 
 /* PRODUCT DETAILS */
 
-.product-details {
-  width: 243px;
-  float: left;
-  margin-top: 20px;
-}
-
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 5px;
+  margin-top: 30px;
 }
 
 .details-list {
