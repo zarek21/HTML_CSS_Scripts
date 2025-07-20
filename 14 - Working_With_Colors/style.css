@@ -1,8 +1,8 @@
 * {
   /* border-top: 10px solid #1098ad; */
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -23,12 +23,11 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
-  /* background-color: red; */
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -38,7 +37,7 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .post-header {
@@ -132,9 +131,13 @@ li:last-child {
   list-style: none;
 } */
 
-.related-post {
+.related {
   list-style: none;
   margin-left: 0;
+}
+
+body {
+  /* background-color: orangered; */
 }
 
 /* .first-li {
@@ -194,7 +197,6 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -214,14 +216,12 @@ button {
   right: 50px;
 }
 
-/* PSEUDO ELEMENTS */
-
 h1::first-letter {
   font-style: normal;
   margin-right: 5px;
 }
 
-h3 + P::first-line {
+h3 + p::first-line {
   /* color: red; */
 }
 
@@ -230,10 +230,10 @@ h2 {
   position: relative;
 }
 
-h2::after {
+h2::before {
   content: "TOP";
   background-color: #ffe70e;
-  color: #000;
+  color: #444;
   font-size: 16px;
   font-weight: bold;
   display: inline-block;
@@ -266,14 +266,13 @@ nav p {
 } */
 
 /* FLOATS */
-
+/*
 .author-img {
   float: left;
   margin-bottom: 20px;
 }
 
 .author {
-  /* padding-left: 80px; */
   float: left;
   margin-top: 10px;
   margin-left: 20px;
@@ -292,8 +291,8 @@ nav {
 }
 
 .clearfix::after {
-  content: "";
   clear: both;
+  content: "";
   display: block;
 }
 
@@ -309,4 +308,28 @@ aside {
 
 footer {
   clear: both;
+}
+*/
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
 }
